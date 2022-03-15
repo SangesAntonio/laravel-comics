@@ -1,3 +1,5 @@
+@php  $navbar = config('navbar');
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,9 @@
           </div>
           <div class="right-nav">
             <ul>
-                <li><a :href=""></a></li>
+                @foreach($navbar as $n)
+                <li><a :href="">{{$n['text']}}</a></li>
+                @endforeach
             </ul>
           </div>
         </nav>
