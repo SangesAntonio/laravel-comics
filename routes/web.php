@@ -26,6 +26,6 @@ Route::get('/footer', function () {
     return view('footer');
 })->name('footer');
 Route::get('/content', function () {
-    $comics = config('comics');
-    return view('content', ['comics' => $comics]);
+
+    return view('content');
 })->name('content');

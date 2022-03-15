@@ -1,5 +1,6 @@
 
-
+@php $comics = config('comics');
+@endphp
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,21 +11,20 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main id="cards-container">
         <div class=" cartoon-section">
             <div class="banner-small">
                 <h3>CURRENT SERIES</h3>
             </div>
         </div>
         <div class="container cards">
-            @php $comics = config('comics');
-            @endphp
+           
             @foreach($comics as $comic)
                 <div class="card">
                     <figure>
-                        <img src="thumb" alt="" />
+                        <img src="{{$comic['thumb']}}" alt="" />
                     </figure>
-                    <p></p>
+                    <p>{{$comic['title']}}</p>
                 </div>
             @endforeach
         </div>

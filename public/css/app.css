@@ -19,13 +19,97 @@ body {
   margin: 0 auto;
 }
 
+main {
+  background-color: #1C1C1C;
+}
+main .cartoon-section {
+  height: 500px;
+  background-image: url("../img/jumbotron.jpg");
+  color: white;
+  position: relative;
+}
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+main .banner-small {
+  width: 250px;
+  height: 50px;
+  background-color: dodgerblue;
+  padding: 10px;
+  color: white;
+  position: relative;
+  bottom: -475px;
+  left: 250px;
+  text-align: center;
+}
+main .button-blue {
+  width: 100px;
+  height: 30px;
+  background-color: dodgerblue;
+  padding: 10px;
+  color: white;
+}
+main .button-blue p {
+  font-size: 0.8rem;
+}
+main .card {
+  width: 16.6666666667%;
+  color: white;
+  margin-bottom: 30px;
+  padding: 15px;
+  overflow: hidden;
+}
+main .card figure {
+  width: 170px;
+  height: 170px;
+}
+main .card figure img {
+  width: 170px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+}
+main p {
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.bg-blue {
+  background-color: #0282F9;
+}
+.bg-blue .cards {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-blue .card {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin: 20px;
+}
+.bg-blue .card img {
+  width: 60px;
+  padding-right: 5px;
+}
+.bg-blue h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
 .top-footer {
-  background-image: url(../assets/img/footer-bg.jpg);
+  background-image: url("../img/footer-bg.jpg");
 }
 .top-footer .lists {
   display: flex;
   padding: 30px 0;
-  background-image: url(../assets/img/dc-logo-bg.png);
+  background-image: url("../img/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -78,65 +162,4 @@ h2 {
   display: flex;
   align-items: center;
   color: dodgerblue;
-}
-
-main {
-  background-color: #1C1C1C;
-}
-main .cartoon-section {
-  height: 500px;
-  background-image: url(../assets/img/jumbotron.jpg);
-  color: white;
-  position: relative;
-}
-main .cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 50px;
-}
-main .banner-small {
-  width: 250px;
-  height: 50px;
-  background-color: dodgerblue;
-  padding: 10px;
-  color: white;
-  position: relative;
-  bottom: -475px;
-  left: 250px;
-  text-align: center;
-}
-main .button-blue {
-  width: 100px;
-  height: 30px;
-  background-color: dodgerblue;
-  padding: 10px;
-  color: white;
-}
-main .button-blue p {
-  font-size: 0.8rem;
-}
-
-.bg-blue {
-  background-color: #0282F9;
-}
-.bg-blue .cards {
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.bg-blue .card {
-  color: white;
-  display: flex;
-  align-items: center;
-  width: 20%;
-  margin: 20px;
-}
-.bg-blue .card img {
-  width: 60px;
-  padding-right: 5px;
-}
-.bg-blue h4 {
-  font-size: 0.8rem;
-  font-weight: 300;
 }
