@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-width: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.top-footer {
+  background-image: url(../assets/img/footer-bg.jpg);
+}
+.top-footer .lists {
+  display: flex;
+  padding: 30px 0;
+  background-image: url(../assets/img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.top-footer .lists .list {
+  padding: 0 20px;
+}
+.top-footer .lists .list li {
+  list-style-type: none;
+  padding: 3px 0;
+}
+.top-footer .lists .list li a {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 5px;
+}
+
+.bottom-footer {
+  background-color: #303030;
+}
+.bottom-footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 0;
+}
+.bottom-footer .bottom .left-bottom a {
+  width: 100px;
+  height: 40px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 2px solid dodgerblue;
+  color: white;
+}
+.bottom-footer .right-bottom ul li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+.bottom-footer .right-bottom ul {
+  display: flex;
+  align-content: center;
+}
+.bottom-footer .text-social {
+  display: flex;
+  align-items: center;
+  color: dodgerblue;
+}
+
+main {
+  background-color: #1C1C1C;
+}
+main .cartoon-section {
+  height: 500px;
+  background-image: url(../assets/img/jumbotron.jpg);
+  color: white;
+  position: relative;
+}
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+main .banner-small {
+  width: 250px;
+  height: 50px;
+  background-color: dodgerblue;
+  padding: 10px;
+  color: white;
+  position: relative;
+  bottom: -475px;
+  left: 250px;
+  text-align: center;
+}
+main .button-blue {
+  width: 100px;
+  height: 30px;
+  background-color: dodgerblue;
+  padding: 10px;
+  color: white;
+}
+main .button-blue p {
+  font-size: 0.8rem;
+}
+
+.bg-blue {
+  background-color: #0282F9;
+}
+.bg-blue .cards {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-blue .card {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin: 20px;
+}
+.bg-blue .card img {
+  width: 60px;
+  padding-right: 5px;
+}
+.bg-blue h4 {
+  font-size: 0.8rem;
+  font-weight: 300;
+}

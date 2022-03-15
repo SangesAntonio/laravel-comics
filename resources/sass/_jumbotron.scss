@@ -1,0 +1,27 @@
+.bg-blue{
+    background-color: #0282F9;
+    
+    .cards{
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+.card{
+    color: white;
+    display: flex;
+    align-items: center;
+    width: calc(100% / 5);
+    margin: 20px;
+    
+}
+.card img{
+    width: 60px;
+    padding-right: 5px;
+}
+h4{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+}
