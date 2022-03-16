@@ -9,6 +9,14 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="bg-blue">
+        <div class="container little-banner">
+
+            <p>DC POWER VISA</p>
+            <p>ADDIOTIONALS DC SITES</p>
+        </div>
+    </div>
     <header class="">
         <nav class="navbar container">
           <div class="left-nav">
@@ -19,7 +27,7 @@
           <div class="right-nav">
             <ul>
                 @foreach($navbar as $n)
-                <li><a :href="">{{$n['text']}}</a></li>
+                <li><a href="{{$n['url']}}">{{$n['text']}}</a></li>
                 @endforeach
             </ul>
           </div>

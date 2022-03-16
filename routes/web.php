@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('main');
+    return view('comics');
 });
 Route::get('/header', function () {
     return view('header');
@@ -25,7 +25,16 @@ Route::get('/jumbotron', function () {
 Route::get('/footer', function () {
     return view('footer');
 })->name('footer');
+
+
 Route::get('/content', function () {
 
     return view('content');
 })->name('content');
+
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    $comic = $comics[$id];
+    return view('comic', compact('comic'));
+})->name('comic');

@@ -10,7 +10,7 @@
     </head>
     <body>
         @include('includes.header')
-        @include('includes.content')
+        @yield('content')
         @include('includes.jumbotron')
         @include('includes.footer')
         

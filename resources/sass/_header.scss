@@ -31,3 +31,18 @@ header{
     width: calc(100 / 2);
 }
 }
+.little-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    
+
+    p{
+        font-size: 12px;
+        font-size: bold;
+        color:white;        
+        display: inline;
+        margin-right: 15px;
+    }
+}

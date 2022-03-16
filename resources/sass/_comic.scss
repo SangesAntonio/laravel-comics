@@ -1,0 +1,16 @@
+.card-container{
+    background-color:  dodgerblue;
+    .jumbo-section{
+        height: 400px;
+        background-image: url("../img/jumbotron.jpg");
+        color: white;
+        position: relative;
+        
+        img{
+            position: absolute;
+        top: 50px;
+        left: 250px;
+        text-align: center;
+        }
+    }
+}

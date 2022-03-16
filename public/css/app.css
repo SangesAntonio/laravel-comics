@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   height: 140px;
   padding: 30px 0;
@@ -48,9 +52,20 @@ header .right-nav {
   width: 50;
 }
 
-main {
-  background-color: #1C1C1C;
+.little-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
 }
+.little-banner p {
+  font-size: 12px;
+  font-size: bold;
+  color: white;
+  display: inline;
+  margin-right: 15px;
+}
+
 main .cartoon-section {
   height: 500px;
   background-image: url("../img/jumbotron.jpg");
@@ -90,11 +105,15 @@ main .card {
   padding: 15px;
   overflow: hidden;
 }
-main .card figure {
+main .card a {
+  text-decoration: none;
+  color: white;
+}
+main .card a figure {
   width: 170px;
   height: 170px;
 }
-main .card figure img {
+main .card a figure img {
   width: 170px;
   height: 170px;
   -o-object-fit: cover;
@@ -102,7 +121,7 @@ main .card figure img {
   -o-object-position: top left;
      object-position: top left;
 }
-main p {
+main .card a p {
   font-size: 0.9rem;
   margin-top: 15px;
 }
@@ -191,4 +210,20 @@ h2 {
   display: flex;
   align-items: center;
   color: dodgerblue;
+}
+
+.card-container {
+  background-color: dodgerblue;
+}
+.card-container .jumbo-section {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+  color: white;
+  position: relative;
+}
+.card-container .jumbo-section img {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  text-align: center;
 }
