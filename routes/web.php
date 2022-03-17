@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('comics');
-});
+})->name('/');
 Route::get('/header', function () {
     return view('header');
 })->name('header');
@@ -35,6 +35,9 @@ Route::get('/content', function () {
 
 Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
+    if (!is_numeric($id) || $id < 0 || $id > count($comics)) {
+        abort('404');
+    }
     $comic = $comics[$id];
     return view('comic', compact('comic'));
 })->name('comic');

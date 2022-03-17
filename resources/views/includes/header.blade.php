@@ -20,7 +20,7 @@
     <header class="">
         <nav class="navbar container">
           <div class="left-nav">
-            <a href="#">
+            <a href="{{route('/')}}">
               <img src="{{asset('img/dc-logo.png')}}" alt="">
             </a>
           </div>

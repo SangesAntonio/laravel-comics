@@ -215,18 +215,104 @@ h2 {
   color: dodgerblue;
 }
 
-.card-container {
-  background-color: dodgerblue;
+#card-container {
+  background-color: white;
 }
-.card-container .jumbo-section {
-  height: 400px;
+#card-container .jumbo-section {
+  background-color: dodgerblue;
+  height: 450px;
+  border-bottom: 80px solid dodgerblue;
   background-image: url("../img/jumbotron.jpg");
   color: white;
   position: relative;
 }
-.card-container .jumbo-section img {
+#card-container .jumbo-section img {
   position: absolute;
-  top: 50px;
-  left: 250px;
+  top: 130px;
+  left: 450px;
   text-align: center;
+  border: 1px solid white;
+}
+#card-container .container-single-card {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+}
+#card-container .bg-white {
+  background-color: white;
+}
+#card-container .title {
+  width: 70%;
+  padding: 25px;
+}
+#card-container .title h1 {
+  padding-bottom: 30px;
+}
+#card-container .title .description-card {
+  padding-top: 20px;
+  color: #686767;
+  font-size: 16px;
+  line-height: 25px;
+}
+#card-container .title .price-info {
+  width: 100%;
+  height: 45px;
+  background-color: #55BA59;
+  padding: 10px 15px;
+  color: #6efa73;
+  display: flex;
+  justify-content: space-between;
+}
+#card-container .title .price-info span {
+  color: white;
+}
+#card-container .title .price-info .availability {
+  color: #6efa73;
+  display: flex;
+}
+#card-container .title .price-info .availability .border-rigth {
+  margin-right: 10px;
+}
+#card-container .adv {
+  text-align: right;
+  width: 30%;
+}
+#card-container .container-info-card {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+}
+#card-container .container-info-card .talent-info {
+  width: 50%;
+}
+#card-container .container-info-card .specs-info {
+  width: 50%;
+}
+#card-container .container-info-card .table {
+  padding: 20px 0;
+  padding-right: 20px;
+  display: flex;
+}
+#card-container .container-info-card .table .table-left {
+  width: 30%;
+}
+#card-container .container-info-card .table .table-left h5 {
+  color: #202020;
+  font-weight: 400;
+}
+#card-container .container-info-card .table .table-rigth {
+  width: 70%;
+  color: dodgerblue;
+}
+#card-container .container-info-card .table .table-rigth .text-black {
+  color: black;
+}
+#card-container hr {
+  border: 0;
+  margin: 0;
+  width: 92%;
+  height: 1px;
+  background: #9e9e9e;
 }

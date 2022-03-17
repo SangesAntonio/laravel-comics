@@ -18,7 +18,7 @@
                 <h4>DC MERCHANDISE</h4>
             </div>
             <div class="card">
-                <img src="{{asset('img/buy-comics-subscription.png')}}" alt="Merch">
+                <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="Merch">
                 <h4>SUBSCRIPTIONS</h4>
             </div>
             <div class="card">
